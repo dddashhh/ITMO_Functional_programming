@@ -21,8 +21,26 @@
 3) Генерация последовательности при помощи отображения
 4) Работа со спец. синтаксисом для циклов
 5) Работа с бесконечными списками для языков, поддерживающих ленивые коллекции или итераторы как часть языка
-6) Реализация на любом удобном для вас традиционном языке программирования для сравнения
+6) Реализация на C++
 ```cpp
+int main() {
+    std::array<long long, 1000> a = {
+            ...
+    };
+
+    long long greatest_product = 0;
+
+    for (size_t c = 0; c <= a.size() - 13; ++c) {
+        long long product = 1;
+        for (size_t i = 0; i < 13; ++i) {
+            product *= a[c + i];
+        }
+        greatest_product = std::max(greatest_product, product);
+    }
+
+    std::cout << greatest_product << std::endl;
+    return 0;
+}
 ```
 
 ## Project Euler - Problem 23 (Non-Abundant Sums)
