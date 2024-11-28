@@ -26,6 +26,24 @@
 >
 >Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
 
+### Problem 8 Solution
+1) Монолитная реализация
+
+- С использованием рекурсии
+```agda
+```
+- С использованием хвостовой рекурсии
+```agda
+```
+
+2) Модульная реализация, где явно разделена генерация последовательности, фильтрация и свёртка
+3) Генерация последовательности при помощи отображения
+4) Работа со спец. синтаксисом для циклов
+5) Работа с бесконечными списками для языков, поддерживающих ленивые коллекции или итераторы как часть языка
+6) Реализация на любом удобном для вас традиционном языке программирования для сравнения
+```cpp
+```
+
 ## Project Euler - Problem 23 (Non-Abundant Sums)
 >
 >A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.
